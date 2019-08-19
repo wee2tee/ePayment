@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01ACF281-EDCD-4D63-9BDC-F3056507C25E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DbfManager</RootNamespace>
+    <AssemblyName>DbfManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbfModel\apbal.cs" />
+    <Compile Include="DbfModel\apbil.cs" />
+    <Compile Include="DbfModel\apbilit.cs" />
+    <Compile Include="DbfModel\apmas.cs" />
+    <Compile Include="DbfModel\aprcpcq.cs" />
+    <Compile Include="DbfModel\aprcpit.cs" />
+    <Compile Include="DbfModel\aptrn.cs" />
+    <Compile Include="DbfModel\arbal.cs" />
+    <Compile Include="DbfModel\arbil.cs" />
+    <Compile Include="DbfModel\arbilit.cs" />
+    <Compile Include="DbfModel\armas.cs" />
+    <Compile Include="DbfModel\arrcpcq.cs" />
+    <Compile Include="DbfModel\arrcpit.cs" />
+    <Compile Include="DbfModel\arship.cs" />
+    <Compile Include="DbfModel\artrn.cs" />
+    <Compile Include="DbfModel\artrnrm.cs" />
+    <Compile Include="DbfModel\bkmas.cs" />
+    <Compile Include="DbfModel\bktrn.cs" />
+    <Compile Include="DbfModel\bktrnit.cs" />
+    <Compile Include="DbfModel\famas.cs" />
+    <Compile Include="DbfModel\glacc.cs" />
+    <Compile Include="DbfModel\glbal.cs" />
+    <Compile Include="DbfModel\glbud.cs" />
+    <Compile Include="DbfModel\glfld.cs" />
+    <Compile Include="DbfModel\glinv.cs" />
+    <Compile Include="DbfModel\gljnl.cs" />
+    <Compile Include="DbfModel\gljnlit.cs" />
+    <Compile Include="DbfModel\glptt.cs" />
+    <Compile Include="DbfModel\glpttit.cs" />
+    <Compile Include="DbfModel\glrep.cs" />
+    <Compile Include="DbfModel\glrepit.cs" />
+    <Compile Include="DbfModel\gltpl.cs" />
+    <Compile Include="DbfModel\gltplit.cs" />
+    <Compile Include="DbfModel\isacc.cs" />
+    <Compile Include="DbfModel\isfixcod.cs" />
+    <Compile Include="DbfModel\isinfo.cs" />
+    <Compile Include="DbfModel\isprd.cs" />
+    <Compile Include="DbfModel\isrep.cs" />
+    <Compile Include="DbfModel\isreport.cs" />
+    <Compile Include="DbfModel\isrun.cs" />
+    <Compile Include="DbfModel\issn.cs" />
+    <Compile Include="DbfModel\issnit.cs" />
+    <Compile Include="DbfModel\istab.cs" />
+    <Compile Include="DbfModel\istax.cs" />
+    <Compile Include="DbfModel\isvat.cs" />
+    <Compile Include="DbfModel\jblist.cs" />
+    <Compile Include="DbfModel\jbmas.cs" />
+    <Compile Include="DbfModel\oeslm.cs" />
+    <Compile Include="DbfModel\oeso.cs" />
+    <Compile Include="DbfModel\oesoit.cs" />
+    <Compile Include="DbfModel\popr.cs" />
+    <Compile Include="DbfModel\poprit.cs" />
+    <Compile Include="DbfModel\stbom.cs" />
+    <Compile Include="DbfModel\stcod.cs" />
+    <Compile Include="DbfModel\stcrd.cs" />
+    <Compile Include="DbfModel\stloc.cs" />
+    <Compile Include="DbfModel\stmas.cs" />
+    <Compile Include="DbfModel\stmin.cs" />
+    <Compile Include="DbfModel\stpri.cs" />
+    <Compile Include="DbfModel\ststa.cs" />
+    <Compile Include="DbfModel\sttak.cs" />
+    <Compile Include="DbfModel\sttrn.cs" />
+    <Compile Include="TableSchemaInfo.cs" />
+    <Compile Include="XHelper.cs" />
+    <Compile Include="DbfContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
